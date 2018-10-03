@@ -29,5 +29,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.each {|token| token=="X" || token=="O"}
+  !board.any? { |x| x == " " }
 end
