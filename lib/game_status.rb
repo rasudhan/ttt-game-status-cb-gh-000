@@ -22,6 +22,7 @@ def won(board)
     if !position_taken?(board, index)
       return nil
     end
+    index+=1
   end
 
   WIN_COMBINATIONS.each do |win_c|
