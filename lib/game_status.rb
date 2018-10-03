@@ -21,5 +21,6 @@ def won(board)
       return win_c
     else
       false
+    end
   end
 end
