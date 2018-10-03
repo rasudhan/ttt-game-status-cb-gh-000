@@ -16,7 +16,8 @@ WIN_COMBINATIONS=[
 ]
 
 def won(board)
-
+  win_set=[]
+  empty_board=board.all? {|x| x==" "}
   WIN_COMBINATIONS.each do |win_c|
     if board[win_c[0]]==board[win_c[1]] && board[win_c[1]]==board[win_c[2]]
       position_taken(board,win_c[0])
