@@ -25,4 +25,5 @@ def won(board)
       win_set=win_c
     end
   end
+  win_set
 end
