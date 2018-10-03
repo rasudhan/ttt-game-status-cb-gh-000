@@ -15,3 +15,6 @@ WIN_COMBINATIONS=[
   [2,5,8]
 ]
 
+def won(board)
+  
+end
