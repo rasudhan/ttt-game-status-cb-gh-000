@@ -35,7 +35,7 @@ end
 def draw?(board)
   if full?(board) && !won?(board)
     return true
-  elsw
+  else
     return false
   end
 end
