@@ -27,3 +27,7 @@ def won?(board)
   end
   win_set
 end
+
+def full?(board)
+  
+end
