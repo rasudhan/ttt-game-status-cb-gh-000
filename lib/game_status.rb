@@ -15,7 +15,7 @@ WIN_COMBINATIONS=[
   [2,5,8]
 ]
 
-def won(board)
+def won?(board)
   win_set=[]
   empty_board=board.all? {|x| x==" "}
   WIN_COMBINATIONS.each do |win_c|
