@@ -21,7 +21,7 @@ def won(board)
   WIN_COMBINATIONS.each do |win_c|
     if empty_board
       false
-    elsif board[win_c[0]]==board[win_c[1]] && board[win_c[1]]==board[win_c[2]]
+    elsif win_c.all?{|value| board[value]=="X"} || win_c.all?{|value| board[value]=="O"}
       win_set=win_c
     end
   end
