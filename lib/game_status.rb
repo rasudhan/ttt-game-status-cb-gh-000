@@ -17,6 +17,9 @@ WIN_COMBINATIONS=[
 
 def won(board)
   WIN_COMBINATIONS.each do |win_c|
-    board[win_c[0]]==board[win_c[1]]==board[win_c[2]]
+    if board[win_c[0]]==board[win_c[1]]==board[win_c[2]]
+      return win_c
+    else
+      false
   end
 end
