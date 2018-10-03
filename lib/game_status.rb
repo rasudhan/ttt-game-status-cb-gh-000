@@ -21,6 +21,7 @@ def won(board)
   while index<9
     if position_taken?(board, index)
       return nil
+    end
   end
 
   WIN_COMBINATIONS.each do |win_c|
